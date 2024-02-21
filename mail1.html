@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+  .portfolio {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .portfolio button {
+            background: #31279d;
+            font-size: 16px;
+            height: 40px;
+            width: 200px;
+            color: #fff;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            box-shadow: 0 8px 16px 0 #460808;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .portfolio button:hover {
+            background: #979797;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .disabled {
+            pointer-events: none;
+            background-color: #ccc !important;
+        }
+        .card {
+            width: 447px;
+            height: 278px;
+            border-radius: 10px;
+            /* background: #212121; */
+            margin-left: 100px;
+        }
+        .which { 
+            position: relative;
+            width: 447px;
+            height: 278px;
+        }
+        .thumbnail {
+            width: 447px;
+            height: 278px;
+            object-fit: cover; /* Ensures the image covers the container */
+            cursor: pointer;
+            border-radius: 10px;
+            border: 3px solid #6d6375; /* Added border */
+        }
+        .thumbnail:hover{
+            border: 3px solid #cfcfcf; /* Added border */
+        }
+          .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto; /* Enable scrolling */
+  }
+
+          .popup-image {
+              display: block;
+              margin: auto; /* Center the image horizontally */
+              max-width: calc(100vw - 100px); /* Adjusted to leave space for close button */
+              max-height: calc(100vh - 100px); /* Adjusted to leave space for close button */
+              overflow: auto; /* Enable scrolling */
+          }
+
+        .close { 
+            color: white; 
+            position: absolute; 
+            top: 10px; 
+            right: 25px; 
+            font-size: 35px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+  
+  <div class="portfolio">
+    <button class="tab-btn" data-target="all">ALL</button>
+    <button class="tab-btn" data-target="web">WEB SCREENS</button>
+    <button class="tab-btn" data-target="mobile">MOBILE SCREEN</button>
+    <button class="tab-btn" data-target="graphic">GRAPHIC WORKS</button>
+</div>
+
+<div id="all" class="tab-content active">
+    <!-- Content for the ALL tab -->
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+          <div class="card">
+              <div class="container which">
+                  <img src="img/music poster.png" alt="Image" class="thumbnail">
+                  <div class="popup">
+                      <img src="img/music poster.png" alt="Pop-up Image" class="popup-image">
+                      <span class="close">&times;</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-5">
+          <div class="card">
+              <div class="container which">
+                  <img src="img/49281951.png" alt="Image" class="thumbnail">
+                  <div class="popup">
+                      <img src="img/49281951.png" alt="Pop-up Image" class="popup-image">
+                      <span class="close">&times;</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div></br>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <div class="card">
+          <div class="container which">
+              <img src="img/poster.png" alt="Image" class="thumbnail">
+              <div class="popup">
+                  <img src="img/poster.png" alt="Pop-up Image" class="popup-image">
+                  <span class="close">&times;</span>
+              </div>
+          </div>   
+      </div>
+  </div>
+  <div class="col-sm-5">
+      <div class="card">
+          <div class="container which">
+              <img src="img/49281951.png" alt="Image" class="thumbnail">
+              <div class="popup">
+                  <img src="img/49281951.png" alt="Pop-up Image" class="popup-image">
+                  <span class="close">&times;</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div></br>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5">
+    <div class="card">
+        <div class="container which">
+            <img src="img/gaming.jpg" alt="Image" class="thumbnail">
+            <div class="popup">
+                <img src="img/gaming.jpg" alt="Pop-up Image" class="popup-image" style="margin-left: 450px;">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-5">
+    <div class="card">
+        <div class="container which">
+            <img src="img/web 2.jpg" alt="Image" class="thumbnail">
+            <div class="popup">
+                <img src="img/web 2.jpg" alt="Pop-up Image" class="popup-image">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div></br>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5">
+      <div class="card">
+          <div class="container which">
+              <img src="img/Frame 1.png" alt="Image" class="thumbnail">
+              <div class="popup">
+                  <img src="img/Frame 1.png" alt="Pop-up Image" class="popup-image">
+                  <span class="close">&times;</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-5">
+      <div class="card">
+          <div class="container which">
+              <img src="img/netflix.png" alt="Image" class="thumbnail">
+              <div class="popup">
+                  <img src="img/netflix.png" alt="Pop-up Image" class="popup-image">
+                  <span class="close">&times;</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="web" class="tab-content">
+    <!-- Content for the WEB SCREENS tab -->
+    <p>Web projects</p>
+</div>
+
+<div id="mobile" class="tab-content">
+    <!-- Content for the MOBILE SCREEN tab -->
+    <p>Mobile projects</p>
+</div>
+
+<div id="graphic" class="tab-content">
+    <!-- Content for the GRAPHIC WORKS tab -->
+    <p>Graphic projects</p>
+</div>
+
+<!-- JavaScript to handle tab switching -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var thumbnails = document.querySelectorAll('.thumbnail');
+      var closeButtons = document.querySelectorAll('.close');
+      var popups = document.querySelectorAll('.popup');
+
+      thumbnails.forEach(function(thumbnail, index) {
+          thumbnail.addEventListener('click', function () { 
+              popups[index].style.display = 'block'; 
+          });
+      });
+
+      closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function () { 
+              closeButton.parentElement.style.display = 'none'; 
+          });
+      });
+
+      window.addEventListener('click', function (e) { 
+          popups.forEach(function(popup) {
+              if (e.target === popup) { 
+                  popup.style.display = 'none'; 
+              }
+          });
+      });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              const target = tab.getAttribute('data-target');
+
+              // Disable all tabs
+              tabs.forEach(t => {
+                  t.classList.remove('disabled');
+              });
+
+              // Enable only the clicked tab
+              tab.classList.add('disabled');
+
+              // Hide all tab contents
+              tabContents.forEach(content => {
+                  content.classList.remove('active');
+              });
+
+              // Show the targeted tab content
+              document.getElementById(target).classList.add('active');
+          });
+      });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              const target = tab.getAttribute('data-target');
+
+              // Hide all tab contents and enable all tabs
+              tabContents.forEach(content => {
+                  content.classList.remove('active');
+              });
+
+              tabs.forEach(btn => {
+                  btn.classList.remove('disabled');
+              });
+
+              // Show the targeted tab content
+              document.getElementById(target).classList.add('active');
+
+              // Disable the clicked tab
+              tab.classList.add('disabled');
+          });
+      });
+  });
+</script>
+</body>
+</html>
