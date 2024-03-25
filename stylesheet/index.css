@@ -111,15 +111,21 @@ display: block; /* Display the bars icon */
 .group1 {
 display: block;
 }
+.sidenav {
+    display: block;
+}
 }
 
 @media screen and (max-width: 425px) {
 .group1 {
 display: block;
 }
+.sidenav {
+    display: block;
+}
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width:1440px) {
   .group1 {
   display: none;
   }
@@ -168,11 +174,9 @@ margin-left: 50px;
 .group1{
 max-height: 60px;
 max-width: 60px;    
-background-color: #f5f5f5;
 border-radius: 60px;
 margin-left: 10px;
 z-index: 1000;
-position: fixed;
 }
 
 .we{
