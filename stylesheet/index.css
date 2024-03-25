@@ -440,7 +440,7 @@ display: block;
 
 .disabled {
 pointer-events: none;
-background-color: #ccc !important;
+background-color: #9dceff !important;
 }
 
 .popup {
