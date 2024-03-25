@@ -126,15 +126,21 @@ display: block;
 }
 }
 
-@media screen and (min-width: 1024px) and (max-width:1440px) {
+@media screen and (min-width: 769px) and (max-width:1440px) {
   .group1 {
   display: none;
   }
-  ul{
+  /* ul{
     margin-top: 300px;
-  }
+  } */
   }
 
+  @media screen and (min-width: 841px) and (max-width:1024px) {
+    ul{
+      margin-top: 170px;
+    }
+    }
+  
 .sidenav {
 height: 100%;
 width: 0;
