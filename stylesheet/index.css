@@ -1055,7 +1055,45 @@ color: #ffffff;
     font-size: 25px;
   }
 
-  @media screen and (min-width:1024) {
+  @media screen and (min-width:1440px) {
+    .border0{
+      position: relative;
+      border-bottom: 6px solid #558fe6;
+      border-radius: 10px;
+      width: 200px;
+      left: 550px;
+      top: -50px;
+    }
+  
+    .border1{
+      position: relative;
+      border-bottom: 6px solid #558fe6;
+      border-radius: 10px;
+      width: 200px;
+      left: 570px;
+      top: -50px;
+    }
+  
+    .border2{
+      position: relative;
+      border-bottom: 6px solid #558fe6;
+      border-radius: 10px;
+      width: 200px;
+      left: 495px;
+      top: -50px;
+    }
+
+    .border3{
+      position: relative;
+      border-bottom: 6px solid #558fe6;
+      border-radius: 10px;
+      width: 200px;
+      left: 530px;
+      top: -40px;
+    }
+  }
+
+  @media only screen and (min-width:466px) and (max-width:1024px) {
     .border0{
       position: relative;
       border-bottom: 6px solid #558fe6;
@@ -1079,7 +1117,7 @@ color: #ffffff;
       border-bottom: 6px solid #558fe6;
       border-radius: 10px;
       width: 200px;
-      left: 285px;
+      left: 290px;
       top: -50px;
     }
 
@@ -1089,45 +1127,7 @@ color: #ffffff;
       border-radius: 10px;
       width: 200px;
       left: 320px;
-      top: -50px;
-    }
-  }
-
-  @media only screen and (max-width:1024px) {
-    .border0{
-      position: relative;
-      border-bottom: 6px solid #558fe6;
-      border-radius: 10px;
-      width: 200px;
-      left: 560px;
-      top: -50px;
-    }
-  
-    .border1{
-      position: relative;
-      border-bottom: 6px solid #558fe6;
-      border-radius: 10px;
-      width: 200px;
-      left: 570px;
-      top: -50px;
-    }
-  
-    .border2{
-      position: relative;
-      border-bottom: 6px solid #558fe6;
-      border-radius: 10px;
-      width: 200px;
-      left: 490px;
-      top: -50px;
-    }
-
-    .border3{
-      position: relative;
-      border-bottom: 6px solid #558fe6;
-      border-radius: 10px;
-      width: 200px;
-      left: 525px;
-      top: -50px;
+      top: -40px;
     }
   }
   
@@ -1165,7 +1165,7 @@ color: #ffffff;
       border-radius: 10px;
       width: 200px;
       left: 25px;
-      top: -50px;
+      top: -40px;
     }
 
     .icon-text {
