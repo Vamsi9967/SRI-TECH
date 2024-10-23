@@ -84,6 +84,9 @@ li a:hover:not(.active) {
         position: relative;
         left: -450px;
       }
+      html{
+        scroll-behavior: normal;
+      }
       }
 
       @media screen and (max-width: 768px) {
