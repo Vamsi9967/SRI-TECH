@@ -3,1087 +3,1272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Home</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
-        integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="stylesheet/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
-        .body{
-            background-color: #f5f1ff;
+        body {
+    font-family: "Outfit", sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+}
 
-        }
-        .head1{
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .gradient-text{
-            font-size: 50px;
-            background: linear-gradient(90deg,#8750f7, #4d2c8e); /* Gradient colors */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
         }
 
-        .wrapper {
-display: inline-flex;
-list-style: none;
-}
-
-.wrapper .icon {
-position: relative;
-left: 20px;
-background: #ffffff;
-border-radius: 50%;
-padding: 15px;
-margin: 10px;
-width: 50px;
-height: 50px;
-font-size: 18px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-cursor: pointer;
-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip {
-position: absolute;
-top: 0;
-font-size: 14px;
-background: #ffffff;
-color: #ffffff;
-padding: 5px 8px;
-border-radius: 5px;
-opacity: 0;
-pointer-events: none;
-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-position: absolute;
-content: "";
-height: 4px;
-width: 4px;
-background: #ffffff;
-bottom: -3px;
-left: 50%;
-transform: translate(-50%) rotate(45deg);
-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-top: -45px;
-opacity: 1;
-visibility: visible;
-pointer-events: auto;
-}
-
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-    border: 1px solid #8750f7;
-color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-    border: 1px solid #8750f7;
-color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-    border: 1px solid #8750f7;
-color: #ffffff;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-border: 1px solid #8750f7;
-color: #ffffff;
-}
-
-.hero-image-box{
-    border-radius: 10%;
-}
-
-.me1{
-    margin-top: 10px;
-    position: relative;
-}
-
-.me1:hover{
-    border: 2px solid #8750f7;
-}
-
-.My{
-    text-align: center;
-    margin-top: 150px;
-    font-size: 35px;
-    font-weight: lighter;
-}
-
-.My1{
-    text-align: center;
-    margin-top: 100px;
-    font-size: 35px;
-    font-weight: lighter;
-}
-.We{
-    text-align: center;
-    margin-bottom: 60px;
-}
-.number{
-    font-size: 20px;
-    position: relative;
-    margin: 5px;
-    padding: 5px;
-}
-.service-title{
-    font-size: 25px;
-    position: relative;
-    margin: 0px;
+ul {
+    list-style-type: none;
+    margin: 10px;
     padding: 0px;
-}
-
-.right-box{
-    font-size: 15px;
-}
-
-.fadeInUp{
-    background-color: #f5f1ff;
-    height: 200px;
-    border-radius: 10px;
-    position: relative;
-    margin: 20px;
-    padding: 20px;
-}
-
-.fadeIn{
-    background-color: #ffdddd;
-    height: 200px;
-    border-radius: 10px;
-    position: relative;
-    margin: 20px;
-    padding: 20px;
-}
-
-
-/* Animation Effects start */
-
-
-@keyframes slidez {
-  0% {
-  transform: scale(0); /* Start with 0 scale */
-  }
-
-  100% {
-  transform: scale(1); /* End with 0 scale */
-  }
-}
-
-@keyframes slideTo {
-  0%{
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation Effects For Home Start */
-
-.home-text h2,
-.home-text h1,
-.home-text .scroll,
-.home-text p,
-.home-text .butto,
-.home-text .button2,
-.social a,
-.about-text h2,
-.about-text h2 span,
-.about h5,
-.about h5 span,
-.about p,
-.ab h2,
-.butt,
-.sk h2,
-.sk h2 span,
-.sk h3,
-.sk h3 span,
-.tab button,
-ul li,
-.box .icons,
-h2 span{
-  opacity: 0;
-  animation: slideTop2 .5s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-}
-
-@keyframes slideTop2 {
-  0%{
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation Effects For Home End */
-
-/* Animation Effects For Portfolio Start */
-
-.sky{
-    animation: sa .5s ease forwards;
-}
-
-@keyframes sa {
-    0%{
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation Effects For Portfolio End */
-
-/* Animation Effects For Contact Start */
-
-.ri{
-  animation: come .5s ease forwards;
-}
-
-@keyframes come {
-  0%{
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-form{
-  animation: form .5s ease forwards;
-}
-
-@keyframes form {
-  0%{
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-/*Portfolio start*/
-
-/*web card start*/
-.web {
-  width: 331px;
-  height: 186.91px;
-  border-radius: 10px;
-  background: #f5f5f5;
-  position: relative;
-  padding: 1px;
-  transition: 0.5s ease-out;
-  background-size: cover;
-  }
-  
-  .web a{
     overflow: hidden;
-  }
+    text-decoration: none;
+    height: 80px;
+    text-align: center;
+    
 
-  .span{
-    position: absolute;
-    width: 100%;
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: -20px;
+    list-style: none;
+}
+
+nav ul li {
+    position: fixed;
+}
+
+li {
+    float: left;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: start;
+    font-size: 14px;
+    padding: 12px 30px;
+    text-decoration: none;
+    list-style-type: none;
+    top: 5px;
+}
+
+li a:hover:not(.active) {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.sidenav {
+    float: right;
+    display: none;
     height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    backdrop-filter: blur(5px);
-    background: #0a0000a1;
-    border-radius: 10px;
-    transition: 0.5s ease;
-    opacity: 0;
-  }
-  
-  .span h2{
-    color: #7d49e5;
-  }
-
-  .web:hover .span{
-    top: 0;
-    opacity: 1;
-  }
-
-  
-/*Hover*/
-  .web:hover {
-  border-color: #7d49e5;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-  }
-  
-  .web:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
-  }
-/*web card end*/
-
-/* Popup styles */
-/* Style the tab */
-  .tab {
-    overflow: hidden;
-    justify-content: center;
-    font-size: 60px;
-    padding: 8px 16px 10px 16px;
-    text-align: center;
-    margin: 0 3px 10px 3px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-/* Style the buttons inside the tab */
-  .tab button {
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 14px;
-    line-height: 1;
-    display: inline-block;
-    border-radius: 7px;
-    font-weight: 400;
-    padding: 11px 25px 10px 25px;
-    color:#7d49e5;
-    margin: 0 5px;
-    text-align: center;
-  }
-  
-/* Change background color of buttons on hover */
-  
-  
-/* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #7d49e5;
-    color: #fff;
-  }
-  
-/* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 25px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-.port h3 span{
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-.port h1 span{
-    color: #ffffff;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
-.port{
-  text-align: center;
-}
-
-.sky{
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 50px;
-}
-/* Mobile screens */
-/* Add CSS for animation */
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/*portfolio end*/
-
-/*Contact Strat*/
-
-.but {
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-color: white;
-background-color: #151212;
-padding: 10px 20px;
-border: none;
-border-radius: .4rem;
-position: relative;
-cursor: pointer;
-overflow: hidden;
-border: 1px solid #7d49e5;
-}
-
-.but span:not(:nth-child(6)) {
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-height: 30px;
-width: 30px;
-background-color: #7d49e5;
-border-radius: 50%;
-transition: .6s ease;
-}
-
-.but span:nth-child(6) {
-position: relative;
-}
-
-.but span:nth-child(1) {
-transform: translate(-3.3em, -4em);
-}
-
-.but span:nth-child(2) {
-transform: translate(-6em, 1.3em);
-}
-
-.but span:nth-child(3) {
-transform: translate(-.2em, 1.8em);
-}
-
-.but span:nth-child(4) {
-transform: translate(3.5em, 1.4em);
-}
-
-.but span:nth-child(5) {
-transform: translate(3.5em, -3.8em);
-}
-
-.but:hover span:not(:nth-child(6)) {
-transform: translate(-50%, -50%) scale(4);
-transition: 1.5s ease;
-}
-
-.contactForm [type=text1], select, textarea {
-width: 100%;
-padding: 12px;
-
-border-radius: 4px;
-box-sizing: border-box;
-margin-top: 6px;
-margin-bottom: 16px;
-resize: vertical;
-}
-
-/* Border hover effect */
-.contactForm [type=text1]:hover {
-border-color: #7d49e5; /* Change border color on hover */
-}
-
-
-/* 
-
-
-
-/* Mobile screens */
-@media only screen and (max-width: 600px) {
-  /* CSS styles for mobile screens */
-  .c1{
-  display: none;
-}
-}
-/* tab screens */
-@media only screen and (min-width: 768px) {
-  /* CSS styles for mobile screens */
-  .c2{
-  display: none;
-}
-}
-/* Mobile screens with a width of 425px or less */
-@media only screen and (max-width: 425px) {
-html, body {
-  overflow-x: hidden !important; /* Hide x-axis scrollbar */
-}
-}
-
-.lead{
-    color: #ffffff;
-}
-
-.edu{
-    background-color: #f6f3fc;
-    margin-top: 150px;
-    position: relative;
-}
-
-.logo{
-    height: 70px;
-    width: 70px;
-    position: relative;
-    display: inline-block;
-    max-width: 100%; 
-}
-
-.menu{
-    text-align: center;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 30px;
+    display: block;
 }
 
-.menu li a:hover:not(.active) {
-  background-color: #2a1454;
-  color: #ffffff;
+.sidenav a:hover {
+    color: #ff8400;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 426px) {
+
+    .sidenav {
+        display: block;
+        position: relative;
+    }
+    
+    .that {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: normal;
+    }
+
+    .icon-text-container h3 {
+        font-size: 10px;
+    }
+
+    .certificate {
+        height: 100px;
+    }
+    .img-fluid{
+        top: 20px;
+        position: relative;
+        left: -120px;
+    }
+    .text-end{
+        top: -30px;
+        right: 20px;
+    }
+    .art{
+        position: relative;
+        display: flex;
+        height: 150px;
+    }
+
+    .colab img{
+        display: none;
+    }
+    .content1{
+        margin-top: -60px;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .hos{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 425) {
+    .col3{
+        width: 200px;
+    }
+    .hos{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:3000px) {
+    .sidenav {
+        display: none;
+    }
+
+    .text-end {
+        display: none;
+    }
+}
+
+
+.head1{
+    height: 80px;
+    background-color: #6a6666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    z-index: 1000;
+    border-bottom: 1px solid #111;
+}
+
+.align-items-center{
+    backdrop-filter: blur(20px);
+    background-color: rgba(17, 17, 17, 0.45);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 20px 0px;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    top: 10px;
+    border-radius: 15px;
+}
+
+.col0{
+    background-image: url(Img/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: auto;
+    top: -20px;
+    position: relative;
+}
+
+.col1{
+    text-align: center;
+    color: #fff;
+}
+
+.hos{
+    font-size: 30px;
+    color: transparent;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.para{
+
+    height: 300px;
+    color: #fff;
+    margin: 90px;
+}
+
+.para h1{
+    font-size: 375%;
+    color: #fff;
+}
+.para h4{
+    font-size: 24px;
+    color: #fff;
+}
+
+.Btn-Container {
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: #01A0C6;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .text {
+    width: calc(170px - 45px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+  }
+
+  .Btn-Container1 {
+    display: block;
+    width: auto;
+    height: 40px;
+    background-color: #01A0C6;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+
+  }
+  .text1 {
+    width: calc(170px - 45px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+  }
+
+  @media (max-width: 768px) {
+    .col0 {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hos {
+        font-size: 24px;
+    }
+
+    .para {
+        height: auto;
+        width: auto;
+        margin: 50px 20px;
+    }
+
+    .para h1 {
+        font-size: 300%;
+    }
+
+    .para h4 {
+        font-size: 18px;
+    }
+
+    .Btn-Container {
+        width: auto;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .text {
+        font-size: 0.9em;
+    }
+
+    .col1 img {
+        height: auto;
+        width: auto;
+    }
+
+    .col1 p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col0 {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hos {
+        font-size: 20px;
+    }
+
+    .para {
+        margin: 100px 10px;
+    }
+
+    .para h1 {
+        font-size: 250%;
+        margin: 10px 0;
+    }
+
+    .para h4 {
+        font-size: 16px;
+    }
+
+    .Btn-Container {
+        height: 35px;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .text {
+        font-size: 0.8em;
+        padding: 0 10px;
+    }
+
+    .col1 {
+        padding-top: 20px;
+    }
+
+    .col1 p {
+        font-size: 12px;
+    }
+
+    .col1 img {
+        height: auto;
+        width: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .col0 {
+        height: 350px;
+    }
+
+    .hos {
+        font-size: 18px;
+    }
+
+    .para h1 {
+        font-size: 200%;
+    }
+
+    .para h4 {
+        font-size: 14px;
+    }
+
+    .Btn-Container {
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 0.7em;
+    }
+
+    .col1 p {
+        font-size: 10px;
+    }
+
+    .col1 img {
+        width: 15px;
+    }
+}
+
+
+  .col2{
+    height: 300px; 
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.skills{
+width: 100%;
+max-width: 600px;
+padding: 0 20px;
+}
+.skill-name{
+font-size: 18px;
+font-weight: 700;
+color: #73bbdf;
+text-transform: uppercase;
+margin: 20px 0;
+}
+.skill-bar{
+height: 14px;
+background: #cdcdcd;
+border-radius: 3px;
+z-index: -1;
+}
+.skill-per{
+height: 14px;
+background: #2076A2;
+border-radius: 3px;
+position: relative;
+z-index: 1;
+}
+.skill-per::before{
+content: attr(per);
+position: absolute;
+padding: 4px 6px;
+background-color: #f1f1f1;
+border-radius: 4px;
+font-size: 12px;
+top:  -35px;
+right:  0;
+transform: translateX(50%);
+}
+.skill-per::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background: #f1f1f1;
+top: -20px;
+right: 0;
+transform: translateX(50%) rotate(45deg);
+border-radius: 2px;
+}
+
+@keyframes fillBars{
+from{
+width: 0;
+}
+to{
+width: 100%;
+}
+}
+
+#return-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.7);
+width: 50px;
+height: 50px;
+display: block;
+text-decoration: none;
+-webkit-border-radius: 35px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+display: none;
+-webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#return-to-top i {
+color: #fff;
+margin: 0;
+position: relative;
+left: 16px;
+top: 13px;
+font-size: 19px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#return-to-top:hover {
+background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+color: #fff;
+top: 5px;
+}
+
+.name{
+    position: relative;
+    margin-top: 20px;
+}
+
+.name p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.back{
+    height: 550px; 
+    background-color: #252B61;
+    border-radius: 50px 50px 0px 0px ;
+    position: relative;
+    top: 40px;
+    z-index: -1;
+}
+
+.sub{
+    margin-top: 30px;
+    position: relative;
+}
+
+.sub h5{
+    font-size: 20px;
+    color: #fff;
+}
+
+.sub h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #A5A9CD;
+}
+
+/* Small devices (phones, <768px) */
+@media (max-width: 767.98px) {
+    .col2 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: auto;
+    }
+
+    .col2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col2 .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        max-width: 100%;
+    }
+
+    .back {
+        height: auto;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .sub h1 {
+        font-size: 30px;
+    }
+
+    .sub h5 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 426px) {
+    /* .container {
+        padding: 0 10px;
+    } */
+
+
+    .name p {
+        font-size: 14px;
+    }
+
+    .back {
+        padding: 15px;
+        height: 500px;
+    }
+
+    .sub h5 {
+        font-size: 14px;
+    }
+
+    .sub h1 {
+        font-size: 24px;
+    }
+    .Team{
+        font-size: 15px;
+    }
+    .block{
+    height: 800px; 
+}
+
+}
+
+
+/* Medium devices (tablets, 768px to <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .col2 {
+        margin-top: 40px;
+        margin-bottom: 70px;
+        height: auto;
+    }
+
+    .col2 .col-md-6 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .back {
+        height: 250px;
+        padding: 20px;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .sub h1 {
+        font-size: 30px;
+    }
+
+    .sub h5 {
+        font-size: 18px;
+    }
+
+    .name p {
+        font-size: 16px;
+    }
+    .Team{
+        font-size: 20px;
+    }
+    .max img{
+        height: 200px;
+    }
+}
+
+.Team{
+        color: #2076A2;
+    }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .col2 {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        height: 300px;
+    }
+
+    .skills {
+        max-width: 600px;
+    }
+
+    .back {
+        height: 500px;
+        padding: 30px;
+    }
+
+    .sub h1 {
+        font-size: 50px;
+    }
+
+    .sub h5 {
+        font-size: 20px;
+    }
+
+    .name p {
+        font-size: 18px;
+    }
+}
+
+.max{
+    margin-top: 30px;
+}
+
+
+/* Extra Large Devices (Desktops and Larger) ≥ 1200px */
+@media (min-width: 1200px) {
+    .back {
+        height: 500px;
+        padding: 40px;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .sub h1 {
+        font-size: 60px;
+    }
+
+    .sub h5 {
+        font-size: 24px;
+    }
+
+    .name p {
+        font-size: 20px;
+    }
+
+    .max img {
+        height: 325px;
+    }
+
+    .sub h1{
+        font-size: 40px;
+    }
+    .block h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .block{
+        border-radius: 50px; 
+    }
+}
+
+/* Large Devices (Desktops) ≥ 992px and < 1200px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .back {
+        height: 450px;
+        padding: 30px;
+        border-radius: 45px 45px 0px 0px;
+    }
+
+    .sub h1 {
+        font-size: 50px;
+    }
+
+    .sub h5 {
+        font-size: 22px;
+    }
+
+    .name p {
+        font-size: 18px;
+    }
+
+    .max img {
+        height: 300px;
+    }
+}
+
+/* Medium Devices (Tablets) ≥ 768px and < 992px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    .sub h1 {
+        font-size: 40px;
+    }
+
+    .sub h5 {
+        font-size: 18px;
+    }
+
+    .name p {
+        font-size: 16px;
+    }
+
+    .max img {
+        height: 250px;
+    }
+    .block {
+        height: 700px; /* Maintain height consistency */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .block {
+        height: 1600px; /* Slightly larger height */
+    }
+}
+
+
+/* Small Devices (Mobile Phones) < 768px */
+@media (min-width: 768px) and (max-width:1024px) {
+    .back {
+        height: 380px;
+        padding: 15px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .sub h1 {
+        font-size: 30px;
+    }
+
+    .sub h5 {
+        font-size: 16px;
+    }
+
+    .name p {
+        font-size: 14px;
+    }
+
+    .max img {
+        height: auto;
+        width: 100%;
+    }
+
+    .Btn-Container {
+        width: auto;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .block {
+        height: 650px; /* Maintain height consistency */
+    }
+}
+
+/* Extra Small Devices (Small Mobile Phones) < 426px */
+@media (max-width: 425.98px) {
+    .back {
+        padding: 10px;
+        border-radius: 50px 50px 0px 0px;
+        height: 580px;
+        
+    }
+
+    .sub h1 {
+        font-size: 24px;
+    }
+
+    .sub h5 {
+        font-size: 14px;
+    }
+
+    .name p {
+        font-size: 12px;
+    }
+
+    .max img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .Btn-Container {
+        width: auto;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .block {
+        height: 1600px; /* Slightly larger height */
+    }
+}
+
+
+
+/* Extra Small Narrow Screens (Mini Phones) < 360px */
+@media (max-width: 359.98px) {
+    .back {
+        padding: 5px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .sub h1 {
+        font-size: 20px;
+    }
+
+    .sub h5 {
+        font-size: 12px;
+    }
+
+    .name p {
+        font-size: 10px;
+    }
+
+    .max img {
+        height: auto;
+        width: 100%;
+    }
+
+    .Btn-Container {
+        width: auto;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1050px) {
+    /* Background Section */
+    .back {
+        height: 460px; /* Allows dynamic height */
+        padding: 30px;
+        border-radius: 40px 40px 0 0;
+    }
+
+    /* Subheading and Main Heading */
+    .sub h1 {
+        font-size: 40px; /* Scaled-down for tablets */
+        line-height: 1.3; /* Improved readability */
+    }
+
+    .sub h5 {
+        font-size: 18px;
+    }
+
+    /* Paragraph Text */
+    .sub p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Skill Bars */
+    .skills {
+        width: 100%; /* Utilize full screen width */
+    }
+
+    /* Buttons */
+    .Btn-Container {
+        width: auto;
+        height: 45px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    /* Images */
+    .max img {
+        width: 100%;
+        height: auto; /* Scales proportionally */
+    }
+
+    /* Team Section Text */
+    .Team {
+        font-size: 18px;
+    }
+
+    /* Name Section */
+    .name p {
+        font-size: 16px;
+    }
+}
+
+.block{
+    background-color: #ffffff; 
+    height: 650px; 
+    border-radius: 50px; 
+    top: -25px; 
+    position: relative;
+}
+
+
+
+.block h1{
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        padding: 20px;
+    }
+
+.txt2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 35px;
+    height: auto; /* Allow height to adjust dynamically */
+}
+
+.txt2 p{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.Test{
+    height: 300px; 
+    background-color: #252B61; 
+    top: -90px; 
+    position: relative; 
+    z-index: -1; 
+    border-radius: 0px 0px 50px 50px;
+}
+
+.Test h1{
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        padding: 60px;
+        color: #fff;
 }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-        <div class="head1">
-        <div class="row align-items-center">
-            <div class="col-sm-2">
-                <a href="index.html">
-                    <img src="img/uv1.png" alt="Logo" class="img-fluid"
-                        style="height: 50px; width: 50px; left: -10px; position: relative;">
+<header>
+        <div class="container" style="text-align: center;">
+            <div class="row align-items-center">
+              <div class="col-sm-2 img-fluid">
+                <a href="index1.html">
+                  <img src="Img/logo1.png" alt="Logo"
+                    style="height: 50px; width: 110px;">
                 </a>
-            </div>
-            <div class="col-sm-8">
+              </div>
+              <div class="col-sm-9">
                 <nav>
                     <ul class="nav justify-content-center that">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Company">Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#IT Staffing">IT Staffing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services & Solutions">Services & Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Jobseekers">Jobseekers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Works">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Services">Services</a>
+                            <a class="nav-link" href="#Login">Login</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-sm-2 text-end">
+              </div>
+              <div class="col-sm-1 text-end">
                 <!-- Sidebar toggle button -->
-                <span style="font-size: 30px; cursor: pointer; float: right;" onclick="openNav()">&#9776; </span>
+                <span style="font-size: 30px; cursor: pointer; float: right; color: #fff;" onclick="openNav()">&#9776; </span>
+              </div>
             </div>
-        </div>
-
-
-        <!-- Sidebar -->
-        <div id="mySidenav" class="sidenav"
-            style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+    
+    
+            <!-- Sidebar -->
+            <div id="mySidenav" class="sidenav"
+              style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
-            <a href="#"
+              <a href="#Home"
                 style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
-            <a href="#About"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Skills</a>
-                <a href="#About"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Resume</a>
-            <a href="#Services"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services</a>
-            <a href="#Contact"
+              <a href="#Skills"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Company</a>
+              <a href="#Resume"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">IT Staffing</a>
+              <a href="#Services"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services & Solutions</a>
+              <a href="#Contact"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Jobseekers</a>
+             <a href="#Contact"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Blog</a>
+             <a href="#Contact"
                 style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
-        </div>
-    </div>
-    </div>
-    </header>
-
-    <section class="hero-section d-flex align-items-center" id="intro" style="position: relative; margin-bottom: 50px; margin-top: 30px;" >
-        <div class="intro_text">
-        <svg viewBox="0 0 1320 300">
-          <text x="50%" Y="50%" text-anchor="middle">
-            HI        </text>
-        </svg>
-      </div>
-      <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="hero-content-box">
-  
-                        <h2 class="hero-sub-title"> I am Vamsi </h2>
-            <h1 class="gradient-text">UI/UX Designer + Web Designer</h1>
-  
-                        <p>I break down complex user experience problems to create integrity focussed solutions that connect billions of people</p>
-            
-                        <div class="wrapper">
-                            <div class="">
-                                <span><h3 >Follow Me on  </h3></span>
-                              </div>
-                            <div class="icon facebook">
-                              
-                              <span><i class="fab fa-behance" style="color: #8750f7; font-weight: 900;"></i></span>
-                            </div>
-                            <div class="icon twitter">
-                              
-                              <span><a href="https://www.linkedin.com/in/vamsi-uddanda-52087322b/" target="_blank"><i class="fa-brands fa-instagram"  style="color: #8750f7; font-weight: 900;"></i></a></span>
-                            </div>
-                            <div class="icon instagram">
-                             
-                              <span><a href="https://www.linkedin.com/in/vamsi-uddanda-52087322b/" target="_blank"><i class="fab fa-linkedin" style="color: #8750f7;"></i></a></span>
-                            </div>
-                            <div class="icon github">
-                              <span><a href="https://github.com/Vamsi9967" target="_blank"><i class="fab fa-github" style="color: #8750f7;"></i></a></span>
-                            </div>
-                        </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-none d-md-block">
-  
-                    <div class="hero-image-box text-center" style="position: relative; margin: 5px 5px 5px 5px; padding: 5px 5px 5px 5px;">
-              <img class="me1" decoding="async" src="img/me1.jpg" alt="ThemeJunction" style="height:370px; width:270px; border-radius: 4%;">
-            </div>
-                </div>
-      </div>
-    </div>
-  </section>
-
-<div class="container-fluied" id="Services">
-    <h1 class="My"> MY Quality Services</h1>
-    <p class="We">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you
-        customers.</p>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="fadeInUp"
-                            data-wow-delay="0.3s">
-                            <div class="left-box d-flex flex-wrap align-items-center">
-                                <span class="number">01</span>
-                                <h3 class="service-title">Branding Design</h3>
-                            </div>
-                            <div class="right-box">
-                                <p>Branding is the process of creating a distinct identity for a business in the minds of your target audience and the general population.</p>
-                            </div>
-                            <!-- <i class="flaticon-up-right-arrow"></i>
-                  <a href="https://geroldlight.themejunction.net/services/branding-design/" class="service-link"></a> -->
-                        </div>
-            </div>
-            <div class="col-md-4">
-                <div class="fadeIn"
-                            data-wow-delay="0.3s">
-                            <div class="left-box d-flex flex-wrap align-items-center">
-                                <span class="number">02</span>
-                                <h3 class="service-title">UI/UX Design</h3>
-                            </div>
-                            <div class="right-box">
-                                <p>the process design teams use to create products that provide
-                                     meaningful and relevant experiences to users.</p>
-                            </div>
-                            <!-- <i class="flaticon-up-right-arrow"></i>
-                  <a href="https://geroldlight.themejunction.net/services/branding-design/" class="service-link"></a> -->
-                        </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="fadeIn"
-                            data-wow-delay="0.3s">
-                            <div class="left-box d-flex flex-wrap align-items-center">
-                                <span class="number">03</span>
-                                <h3 class="service-title">Web Design</h3>
-                            </div>
-                            <div class="right-box">
-                                <p>the production of functional, interactive websites 
-                                    accomplished through the use of the HTML and CSS coding languages.</p>
-                            </div>
-                            <!-- <i class="flaticon-up-right-arrow"></i>
-                  <a href="https://geroldlight.themejunction.net/services/branding-design/" class="service-link"></a> -->
-                        </div>
-            </div>
-            <div class="col-md-8">
-                <div class="fadeInUp"
-                            data-wow-delay="0.3s">
-                            <div class="left-box d-flex flex-wrap align-items-center">
-                                <span class="number">04</span>
-                                <h3 class="service-title">App Design</h3>
-                            </div>
-                            <div class="right-box">
-                                <p>design is the process of creating the visual look, layout, and flow of an application's interface.
-                                     Outputs of the app design stage range from simple sketches to prototypes.</p>
-                            </div>
-                            <!-- <i class="flaticon-up-right-arrow"></i>
-                  <a href="https://geroldlight.themejunction.net/services/branding-design/" class="service-link"></a> -->
-                        </div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<div class="container-fluied" id="Works">
-    <h1 class="My"> MY Works</h1>
-    <div class="tab">
-        <button style="--i:1" class="tablinks" onclick="openCity(event, 'ALL')">UI/UX</button>
-        <button style="--i:2" class="tablinks" onclick="openCity(event, 'WEBSITES')">Graphic</button>
-        <button style="--i:3" class="tablinks" onclick="openCity(event, 'FIGMA DESIGNS')">Web Templates</button>
-        <button style="--i:4" class="tablinks" onclick="openCity(event, 'GRAPHIC WORKS')">Wordpress</button>
-      </div>
-  
-      <div id="ALL" class="tabcontent">
-          <div class="row container-fluid sky">
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/frame.png'); ">
-                <a href="https://www.figma.com/proto/xPjrfBJ5YKO0R5YXxaw48Z/Lowall?node-id=250-326&t=c87EamPrAMZfOOSV-1&scaling=contain&content-scaling=fixed&starting-point-node-id=138%3A548" data-lightbox="web-image" target="_blank">
-                  <div class="span">
-                    <h2>Mobile App</h2>
-                    <p class="lead">Using Figma</p>
-                  </div>
-                    
-                </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/Desktop9.png'); ">
-                  <a href="https://www.figma.com/proto/cjol6Ff2prkreFAfdxShcx/HMS?node-id=10-3&t=U5vXjLdEXiuFS7Jw-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A3" data-lightbox="web-image" target="_blank" style="width: auto;">
-                    <div class="span">
-                      <h2>WEBSITE</h2>
-                      <p class="lead">Using Figma</p>
-                    </div>
-                      
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/edu.png'); ">
-                  <a href="https://www.figma.com/proto/IzDXUxhTZOhsonIqIWRHAp/Untitled?node-id=37-112&t=Cp4Lk9n6yiNPgBCx-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=37%3A112" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>WEBSITE</h2>
-                      <p class="lead">Using Figma</p>
-                    </div>
-                      
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/Desktop1.jpg'); ">
-                <a href="img/Desktop.jpg" data-lightbox="web-image" target="_blank">
-                  <div class="span">
-                    <h2>WEBSITE</h2>
-                    <p class="lead">Using Figma</p>
-                  </div>
-                    
-                </a>
-            </div>
-          </div>
-      </div>
-      
-      <div id="WEBSITES" class="tabcontent">
-          <div class="row container-fluid sky">
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/way2.jpg'); ">
-                  <a href="img/way1.png" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>Logo design</h2>
-                      <p class="lead">Using Illustrator</p>
-                    </div>
-                      
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/red cow branding1.jpg'); ">
-                  <a href="img/red cow branding.jpg" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>Logo design</h2>
-                      <p class="lead">Using Illustrator</p>
-                    </div>
-                      
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/vis.png'); ">
-                  <a href="img/vis1.jpg" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>Logo design</h2>
-                      <p class="lead">Using Illustrator</p>
-                    </div>
-                      
-                  </a>
-              </div>
-          </div>
-      </div>
-      
-      <div id="FIGMA DESIGNS" class="tabcontent">
-         
-          <div class="row container-fluid sky">
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/gaming1.jpg'); ">
-                  <a href="img/gaming.jpg" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>Web Template</h2>
-                      <p class="lead">Using Photoshop</p>
-                    </div>
-                      
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('img/Capture.JPG'); ">
-                  <a href="img/web 2.jpg" data-lightbox="web-image" target="_blank">
-                    <div class="span">
-                      <h2>Web Template</h2>
-                      <p class="lead">Using Photoshop</p>
-                    </div>
-                      
-                  </a>
-              </div>
-          </div>
-      </div>
-      
-      <div id="GRAPHIC WORKS" class="tabcontent">
-          <div class="row container-fluid sky">
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('images/football1.jpg');">
-                  <a href="images/football.jpg" data-lightbox="photo-image" target="_blank">
-                    <div class="span">
-                      <h2>Poster</h2>
-                      <p class="lead">Using Photoshop</p>
-                    </div>
-                     
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('images/chess1.jpg');">
-                  <a href="images/chess.jpg" data-lightbox="photo-image" target="_blank">
-                    <div class="span">
-                      <h2>Poster</h2>
-                      <p class="lead">Using Photoshop</p>
-                    </div>
-                   
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('images/player1.jpg');">
-                  <a href="images/player.jpg" data-lightbox="photo-image" target="_blank">
-                    <div class="span">
-                      <h2>Poster</h2>
-                      <p class="lead">Using Photoshop</p>
-                    </div>
-                 
-                  </a>
-              </div>
-              <div class="col-lg-6 col-md-4 web" style="background-image: url('images/chess1.jpg');">
-                  <a href="images/chess.jpg" data-lightbox="photo-image" target="_blank">
-                    <div class="span">
-                      <h2>Poster</h2>
-                      <p class="lead"> Using Photoshop</p>
-                    </div>
-                  
-                  </a>
-              </div>
-          </div>
-      </div>
-</div>
-
-<div class="container-fluied" id="Resume">
-    <div class="edu">
-        <h1 class="My1" style="margin: 50px; padding: 50px;"> Education & Experience</h1>
-    
-        <div class="row">
-            <div class="col-md-6">
-                <div class="icon-text-container">
-                    <h5>2024 <span style="color:#aeaeae;"> - </span> Present</h5>
-                        <h5>UI/UX Designer <span style="color:#aeaeae;"> - </span> ESOTERIC PROJECTS</h5>
-                    <h5>Visakhapatnam</h5>
-                </div>
-
-                <div class="icon-text-container">
-                    <h5>2022 <span style="color:#aeaeae;"> - </span> 2023</h5>
-                        <h5>INFORMATION EXECUTIVE <span style="color:#aeaeae;"> - </span> TRACXN</h5>
-                    <h5>Bengaluru</h5>
-                </div>
-
-            </div>
-        
-
-        <div class="col-md-6">
-            <div class="icon-text-container">
-                <h5>2024 <span style="color:#aeaeae;"> - </span> 2026</h5>
-                        <h5>MCA <span style="color:#aeaeae;"> - </span> Andhra University</h5>
-                    <h5>Visakhapatnam</h5>
-            </div>
-
-            <div class="icon-text-container">
-                <h5>2018 <span style="color:#aeaeae;"> - </span> 2021</h5>
-                <h5>BACHELOR'S OF HOTEL MANAGMENT <span
-                    style="color:#aeaeae;"> - </span></br> SOUTHERN INTERNATIONAL HOTEL MANAGMENT ACCADEMY</h5>
-                <h5>Visakhapatnam</h5>
             </div>
         </div>
-    </div>
+</header>
 
-</div>
-</div>
-
-<div class="container-fluied" id="Skills">
-        <h1 class="My" style="margin: 50px; padding: 50px;"> My Skills</h1>
-    
-        <div class="row">
-            <div class="col-md-2">
-                <div class="wrapper">
-                    <div class="icon twitter">
-                              
-                        <span><a href="https://www.linkedin.com/in/vamsi-uddanda-52087322b/" target="_blank"><i class="fa-brands fa-instagram"  style="color: #8750f7; font-weight: 900;"></i></a></span>
-                      </div>
-                </div>
-            </div>
-        
-
-        <div class="col-md-2">
-        </div>
-    </div>
-
-</div>
-
-<div class="container-fluied">
-    <h1 class="My"> Certification</h1>
-    <div class="container">
-    <p class="We">I create front-end websites. I am capable of producing pixel-perfect design and clean code. Using web animations, 
-		I additionally increase the website's interactive features. 
-		Regardless of the user's device, a responsive design makes your website accessible to all users.</p>
-    </div>
-    <div class="certificate">
-        <img src="img/certificate.jpg" alt="" style="height: 300px;">
-
-    </div>
-</div>
-
-<div class="container-fluied" style="background-color: #f6f3fc;" id="Contact">
-
+<div class="container-fluied col0">
+    <h1 class="hos">HosPlus</h1>
     <div class="row">
-        <div class="col-sm-6"  style="position: relative; margin-top: 50px;">
-        <div class="row input-container">
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <input type="text" required / style="background-color: #fff;">
-                    <label style="color: #d8d8d8;">Name</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="styled-input">
-                    <input type="text" required /  style="background-color: #fff;">
-                    <label style="color: #d8d8d8;">Email</label>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12" >
-                <div class="styled-input" style="float:right;">
-                    <input type="text" required /  style="background-color: #fff;">
-                    <label style="color: #d8d8d8;">Phone Number</label>
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <textarea required  style="background-color: #fff;"></textarea>
-                    <label style="color: #d8d8d8;">Message</label>
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-            </div>
-        </div>
+      <div class="col-md-6 para">
+        <h4>SRI Tech Solutions is an innovation-driven</h4>
+        <h3 style="color: #2076A2;">Information Technology</h3>
+        <h1>Staffing & Solutions
+        </br>Firm</h1>
+          <button class="Btn-Container">
+            <span class="text">Know more</span>
+          </button>
+      </div>
     </div>
-
-    <div class="col-sm-6" style="position: relative; margin-top: 50px;">
-     <div class="container">
-        <h2 class="gradient-text">Let’s work together!</h2>
-        <p>I design and code beautifully simple things and i love what i do.</br> Just simple like that!</p>
-        <div class="phone">
-            <h4 style="color: #111;">Phone:</br> +91 630 385 2269</h4>
-            <h4 style="color: #111;">Email:</br> vamsiuddanda99@gmail.com</h4>
-        </div>
+    <div class="container col1">
+        <img src="Img/Group.png" alt="" style="height: 15px; width: 10px;">
+        <p>Scroll down</p>
     </div>
-    </div>
-    </div>
-
-    <footer style="background-color: #2a1454; height: 200px;">
-
-        <img class="logo" src="img/uv2.png" alt="" style="display: block; margin: 0 auto; position: relative; top: 25px;">
-     <div class="menu">
-        <navbar  style="text-align: center; justify-content: center; position: relative; display: inline-block; top: 25px;">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Resume" style="color: #fff;">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Skills" style="color: #fff;">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Works" style="color: #fff;">Works</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Services" style="color: #fff;">Services</a>
-                </li>
-            </ul>
-        </navbar>
-    </div>
-    </footer>
-        
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-6g1bhDSC9cxJYR08tpvzriw/Z1TpXhG93Ef7xzzMsPn+YJHV2Ho2hftMcyUb3YBvmI8VOnEHLJbI+KqJ6STuZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-EcjQPe6SYb5VBsUGvG5zyfr1ToCFJ7QJbIYiFtl3QCKyntCyHAsA5myOXL35Jt7BgcvCPhdP8XkUM8zyUyakXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="script.js"></script>
+<div class="container col2">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="Img/Rectangle 2.png" alt="" style="height: 350px;">
+        </div>
+        <div class="col-md-6">
+            <h4 style="color: #2076A2;">DIGITAL INFORMATION</h4>
+            <h1 class="Team">Enterprises today are evolving at a faster pace than ever before</h1>
+            <p class="name">Entire industries are being born, disrupted, and consolidated.
+                Digital transformation is fueling this new era of business growth, automation, and innovation.</p>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">CEO's</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="56%" style="max-width: 56%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="name">
+            <p>56% of CEO's say digital transformation has increased profits.</p>
+            <h4>— Gartner</h4>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluied back">
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="sub">
+                <h5>TALENT</h5>
+                <h1>
+                    Does your organization have access to the right talent to evolve?
+                </h1>
+                <p style="font-size: 20px; color: #fff; font-weight: 300;">SRI Tech Solutions can help you identify the right </br> people to get you there.</p>
+            </div>
+            <button class="Btn-Container">
+                <span class="text">Know more</span>
+              </button>
+        </div>
+        <div class="col-md-6">
+            <div class="max">
+            <img src="Img/Rectangle 3.png" alt="">
+        </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+<div class="container-flueid block">
+    <h1>Services</h1>
+
+    <div class="container">
+        <div class="right">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Group1.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">IT Staffing</h4>
+                        <p>Innovation-driven information technology staffing</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Coding.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">Application Development</h4>
+                        <p>Web & Mobile Application Development</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Wifi.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">Wireless Engineering</h4>
+                        <p>4G, LTE, VoLTE, 5G Engineering</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Group1.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">Quality Assurance</h4>
+                        <p>Manual, Automation, Performance Testing</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Coding.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">Offshoring Services</h4>
+                        <p>Offshore Development and Resourcing</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="txt2">
+                        <img src="Img/Wifi.png" alt="" style="height: 80px; width: 80px;">
+                        <h4 style="font-weight: bold;">Product Development</h4>
+                        <p>End-to-end product development</p>
+                        <button class="Btn-Container1">
+                            <span class="text1">Know more</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluied Test">
+    
+    <div>
+        <h1>Industries We Serve</h1>
+    </div>
+
+
+</div>
 
 <script>
-    function slowScroll(target) {
-      const element = document.querySelector(target);
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  </script>
-  <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.display = "block";
-    }
+        function openNav() {
+          document.getElementById("mySidenav").style.display = "block";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidenav").style.display = "none";
+        }
+</script>
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.display = "none";
-    }
-</script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $('header nav ul li a button').on('click', function (e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top - 50 // Adjust for fixed header height
-        }, 800);
-    });
-</script>
+    window.onload = function() {
+        var skillBars = document.querySelectorAll('.skill-per');
+        skillBars.forEach(function(skillBar) {
+            skillBar.style.animation = 'fillBars 2.5s forwards';
+        });
+    };
+    </script>
+
 </body>
 </html>
