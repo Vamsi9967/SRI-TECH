@@ -24,6 +24,10 @@
     background-color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
         position: fixed;
         top: 0;
@@ -216,7 +220,7 @@ li a:hover:not(.active) {
 }
 
 .col0{
-    background-image: url(Img/Rectangle\ 1.png);
+    background-image: url(Img/back.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -252,6 +256,9 @@ li a:hover:not(.active) {
 .para h4{
     font-size: 24px;
     color: #fff;
+}
+.para h3{
+    color: #FFDD55;
 }
 
 .Btn-Container {
@@ -1032,6 +1039,7 @@ top: 5px;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     text-align: center;
+    justify-items: center;
 }
 
 .Test1 h1{
@@ -1175,177 +1183,108 @@ top: 5px;
     }
   }
 
-  .footer-section {
-  position: relative;
+
+  .footer {
+    padding: 40px 0;
+    background-color: #24354e;
+    color: white;
+    position: relative;
 }
 
-.single-cta i {
-  color:#7641BF;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
-}
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
-}
-.cta-text h4 {
-  color: #000000;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
-}
-.footer-content {
-  position: relative;
-  z-index: 0;
-  background-color: #33377b;
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-logo img {
-    max-width: 200px;
-    padding: 10px;
-}
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 28px;
-  padding: 10px;
+.footer-links {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
-.footer-social-icon{
-    padding: 10px;
-}
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-}
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-}
-.facebook-bg{
-  background: #3B5998;
-}
-.twitter-bg{
-  background: #55ACEE;
-}
-.instagram-bg{
-  background: #DD4B39;
+/* Responsive styles for smaller devices */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        font-size: 16px; /* Slightly smaller font for better fit */
+    }
 }
 
-.footer-widget {
-    padding: 10px;
-}
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
-}
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #7641BF;
-}
-/* .footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
+@media screen and (max-width: 576px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on very small screens */
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px; /* Add spacing between items */
+    }
 }
 
-.footer-widget ul li a:hover{
-  background: #33377b;
-  color: #d0afff;
-  text-decoration: none;
-}
-.footer-widget ul li a {
-  color: #ffffff;
-  text-transform: capitalize;
-
-} */
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-}
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #202020;
-  padding: 25px 0;
-}
-.copyright-text p {
-  margin-top: 30px;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 5px;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
+.footer li {
+    display: inline-block; /* Change to inline-block for horizontal layout */
+    padding: 0 10px;
 }
 
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social > a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+.footer .footer-break{
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:white
+    }
+
+.footer a img {
+    display: block;
+    margin: 10px auto; /* Centers the image horizontally */
+}
     </style>
 </head>
 <body>
@@ -1353,7 +1292,7 @@ top: 5px;
         <div class="container" style="text-align: center;">
             <div class="row align-items-center">
                 <div class="col-sm-2 img-fluid">
-                    <a href="index1.html">
+                    <a href="index.html">
                         <img src="Img/logo1.png" alt="Logo" style="height: 50px; width: 110px;">
                     </a>
                 </div>
@@ -1424,7 +1363,7 @@ top: 5px;
         <h1 class="hos">SRI</h1>
             <div class="para">
                 <h4>SRI Tech Solutions is an innovation-driven</h4>
-                <h3 style="color: #2076A2;">Information Technology</h3>
+                <h3>Information Technology</h3>
                 <h1>Staffing & Solutions
                     </br>Firm</h1>
                 <button class="Btn-Container">
@@ -1443,7 +1382,7 @@ top: 5px;
             <div class="col-md-6">
                 <img src="Img/Rectangle 2.png" alt="" style="height: 350px;">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="scroll">
                 <h4 style="color: #2076A2;">DIGITAL INFORMATION</h4>
                 <h1 class="Team">Enterprises today are evolving at a faster pace than ever before</h1>
                 <p class="name">Entire industries are being born, disrupted, and consolidated.
@@ -1643,77 +1582,33 @@ top: 5px;
 </div>
 
 <div class="container-fluied Test1">
-    <div>
       <h1>Learn how SRI Tech Solutions can enable your future IT initiatives</h1>
-    </div>
-    <button class="Btn-Container">
-        <span class="text">Know more</span>
+    <button class="Btn-Container1">
+        <span class="text1">Contact Us</span>
     </button>
 </div>
 
-<footer class="footer-section">
-    <div class="container-fluied">
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="Img/logo1.png"  alt="logo"></a>
-                        </div>
-                        <div class="footer-text">
-                            <p>All Rights Reserved. This website is owned and operated by SRI Tech Solutions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <div class="nav">
-                        <ul>
-                            <li>
-                                <a href="#Home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#Company">Company</a>
-                            </li>
-                            <li>
-                                <a href="#IT Staffing">IT Staffing</a>
-                            </li>
-                            <li>
-                                <a href="#Services & Solutions">Services & Solutions</a>
-                            </li>
-                            <li>
-                                <a href="#Jobseekers">Jobseekers</a>
-                            </li>
-                            <li>
-                                <a href="#Blog">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#Login">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                  <div class="footer-social-icon">
-                    <span>Follow us</span>
-                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                    <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
-                </div>
-                <div class="copyright-text">
-                  <p>Copyright &copy; 2018, All Right Reserved.</p>
-              </div>
-                </div>
-            </div>
-        </div>
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <a href="index.html">
+        <img src="Img/logo1.png" alt="Logo" style="height: 50px; width: 110px;">
+    </a>
+    <div class="social" role="navigation" aria-labelledby="social-heading">
+        <h3 id="social-heading" class="sr-only">Follow us on social media</h3>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Mastodon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     </div>
+    <hr class="footer-break">
+    <ul class="footer-links" role="navigation" aria-labelledby="footer-links-heading">
+        <h3 id="footer-links-heading" class="sr-only">Footer Links</h3>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">IT Staffing</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+    <p class="copyright">All Rights Reserved. This website is owned and operated by SRI Tech Solutions.</p>
 </footer>
 
     <script>
