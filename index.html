@@ -216,7 +216,7 @@ li a:hover:not(.active) {
 }
 
 .col0{
-    background-image: url(img/Rectangle\ 1.png);
+    background-image: url(Img/Rectangle\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -359,7 +359,7 @@ li a:hover:not(.active) {
     }
 
     .para {
-        margin: 100px 10px;
+        margin: 130px 10px;
     }
 
     .para h1 {
@@ -886,6 +886,7 @@ top: 5px;
     .block {
         height: 1600px; /* Slightly larger height */
     }
+
 }
 
 
@@ -983,14 +984,12 @@ top: 5px;
     position: relative;
 }
 
-
-
 .block h1{
         text-align: center;
         font-size: 30px;
         position: relative;
         padding: 20px;
-    }
+}
 
 .txt2 {
     display: flex;
@@ -1010,7 +1009,7 @@ top: 5px;
 }
 
 .Test{
-    height: 300px; 
+    height: 350px; 
     background-color: #252B61; 
     top: -90px; 
     position: relative; 
@@ -1020,161 +1019,485 @@ top: 5px;
 
 .Test h1{
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
         position: relative;
         padding: 60px;
         color: #fff;
 }
+
+.Test1{
+    height: 250px; 
+    background-color: #252B61; 
+    display: block;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+}
+
+.Test1 h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        position: relative;
+        padding: 40px;
+        color: #fff;
+}
+
+
+@media (max-width: 767.98px) {
+    .block {
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 20px;
+        border-radius: 30px; /* Adjust corner radius for smaller screens */
+    }
+
+    .Test {
+        height: auto; /* Let content dictate the height */
+        padding: 20px;
+    }
+}
+
+/* Extra Small Devices (Small Mobile Phones) < 426px */
+@media (max-width: 425.98px) {
+    .block {
+        height: auto; /* Dynamic height for small screens */
+        padding: 15px;
+    }
+
+    .Test {
+        height: auto; /* Dynamic height based on content */
+        padding: 15px;
+    }
+
+    .action h3{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+}
+
+/* Extra Small Narrow Screens (Mini Phones) < 360px */
+@media (max-width: 359.98px) {
+    .block {
+        height: auto; /* Fully flexible height */
+        padding: 10px;
+    }
+
+    .Test {
+        height: auto; /* Fully flexible height */
+        padding: 10px;
+    }
+
+}
+
+.action{
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.action h1{
+    font-size: 40px;
+    color: #252B61;
+    font-weight: 500;
+}
+
+.action p{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px;
+}
+
+.action h3{
+    font-size: 25px;
+    color: #252B61;
+    font-weight: 200;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    padding: 50px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before, .slider::after {
+
+    content: "";
+    padding: 50px;
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+  @media screen and (max-width: 720px) {
+    .slider img{
+      width: auto;
+    }
+  }
+
+  .footer-section {
+  position: relative;
+}
+
+.single-cta i {
+  color:#7641BF;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 0;
+  background-color: #33377b;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+    padding: 10px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 28px;
+  padding: 10px;
+}
+
+.footer-social-icon{
+    padding: 10px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.instagram-bg{
+  background: #DD4B39;
+}
+
+.footer-widget {
+    padding: 10px;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #7641BF;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover{
+  background: #33377b;
+  color: #d0afff;
+  text-decoration: none;
+}
+.footer-widget ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
     </style>
 </head>
 <body>
-<header>
+    <header>
         <div class="container" style="text-align: center;">
             <div class="row align-items-center">
-              <div class="col-sm-2 img-fluid">
-                <a href="index1.html">
-                  <img src="img/logo1.png" alt="Logo"
-                    style="height: 50px; width: 110px;">
-                </a>
-              </div>
-              <div class="col-sm-9">
-                <nav>
-                    <ul class="nav justify-content-center that">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Company">Company</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#IT Staffing">IT Staffing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Services & Solutions">Services & Solutions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Jobseekers">Jobseekers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Login">Login</a>
-                        </li>
-                    </ul>
-                </nav>
-              </div>
-              <div class="col-sm-1 text-end">
-                <!-- Sidebar toggle button -->
-                <span style="font-size: 30px; cursor: pointer; float: right; color: #fff;" onclick="openNav()">&#9776; </span>
-              </div>
+                <div class="col-sm-2 img-fluid">
+                    <a href="index1.html">
+                        <img src="Img/logo1.png" alt="Logo" style="height: 50px; width: 110px;">
+                    </a>
+                </div>
+                <div class="col-sm-9">
+                    <nav>
+                        <ul class="nav justify-content-center that">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Company">Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#IT Staffing">IT Staffing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Services & Solutions">Services & Solutions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Jobseekers">Jobseekers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Login">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-1 text-end">
+                    <!-- Sidebar toggle button -->
+                    <span style="font-size: 30px; cursor: pointer; float: right; color: #fff;"
+                        onclick="openNav()">&#9776; </span>
+                </div>
             </div>
-    
-    
+
+
             <!-- Sidebar -->
             <div id="mySidenav" class="sidenav"
-              style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
-              <a href="#Home"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
-              <a href="#Skills"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Company</a>
-              <a href="#Resume"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">IT Staffing</a>
-              <a href="#Services"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services & Solutions</a>
-              <a href="#Contact"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Jobseekers</a>
-             <a href="#Contact"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Blog</a>
-             <a href="#Contact"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
+                style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                    style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
+                <a href="#Home"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
+                <a href="#Skills"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Company</a>
+                <a href="#Resume"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">IT
+                    Staffing</a>
+                <a href="#Services"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services
+                    & Solutions</a>
+                <a href="#Contact"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Jobseekers</a>
+                <a href="#Contact"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Blog</a>
+                <a href="#Contact"
+                    style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
             </div>
         </div>
-</header>
+    </header>
 
-<div class="container-fluied col0">
-    <h1 class="hos">HosPlus</h1>
-    <div class="row">
-      <div class="col-md-6 para">
-        <h4>SRI Tech Solutions is an innovation-driven</h4>
-        <h3 style="color: #2076A2;">Information Technology</h3>
-        <h1>Staffing & Solutions
-        </br>Firm</h1>
-          <button class="Btn-Container">
-            <span class="text">Know more</span>
-          </button>
-      </div>
-    </div>
-    <div class="container col1">
-        <img src="Img/Group.png" alt="" style="height: 15px; width: 10px;">
-        <p>Scroll down</p>
-    </div>
-</div>
+    <div class="container-fluied col0">
+        <h1 class="hos">SRI</h1>
+            <div class="para">
+                <h4>SRI Tech Solutions is an innovation-driven</h4>
+                <h3 style="color: #2076A2;">Information Technology</h3>
+                <h1>Staffing & Solutions
+                    </br>Firm</h1>
+                <button class="Btn-Container">
+                    <span class="text">Know more</span>
+                </button>
+            </div>
 
-<div class="container col2">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="img/Rectangle 2.png" alt="" style="height: 350px;">
+        <div class="container col1">
+            <img src="Img/Group.png" alt="" style="height: 15px; width: 10px;">
+            <p>Scroll down</p>
         </div>
-        <div class="col-md-6">
-            <h4 style="color: #2076A2;">DIGITAL INFORMATION</h4>
-            <h1 class="Team">Enterprises today are evolving at a faster pace than ever before</h1>
-            <p class="name">Entire industries are being born, disrupted, and consolidated.
-                Digital transformation is fueling this new era of business growth, automation, and innovation.</p>
-            <div class="skills">
-                <div class="skill">
-                    <div class="skill-name">CEO's</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="56%" style="max-width: 56%;"></div>
+    </div>
+
+    <div class="container col2">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Img/Rectangle 2.png" alt="" style="height: 350px;">
+            </div>
+            <div class="col-md-6">
+                <h4 style="color: #2076A2;">DIGITAL INFORMATION</h4>
+                <h1 class="Team">Enterprises today are evolving at a faster pace than ever before</h1>
+                <p class="name">Entire industries are being born, disrupted, and consolidated.
+                    Digital transformation is fueling this new era of business growth, automation, and innovation.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-name">CEO's</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="56%" style="max-width: 56%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name">
+                    <p>56% of CEO's say digital transformation has increased profits.</p>
+                    <h4>— Gartner</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluied back">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sub">
+                        <h5>TALENT</h5>
+                        <h1>
+                            Does your organization have access to the right talent to evolve?
+                        </h1>
+                        <p style="font-size: 20px; color: #fff; font-weight: 300;">SRI Tech Solutions can help you
+                            identify the right </br> people to get you there.</p>
+                    </div>
+                    <button class="Btn-Container">
+                        <span class="text">Know more</span>
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <div class="max">
+                        <img src="Img/Rectangle 3.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="name">
-            <p>56% of CEO's say digital transformation has increased profits.</p>
-            <h4>— Gartner</h4>
-        </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluied back">
- <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="sub">
-                <h5>TALENT</h5>
-                <h1>
-                    Does your organization have access to the right talent to evolve?
-                </h1>
-                <p style="font-size: 20px; color: #fff; font-weight: 300;">SRI Tech Solutions can help you identify the right </br> people to get you there.</p>
-            </div>
-            <button class="Btn-Container">
-                <span class="text">Know more</span>
-              </button>
-        </div>
-        <div class="col-md-6">
-            <div class="max">
-            <img src="img/Rectangle 3.png" alt="">
-        </div>
-        </div>
-    </div>
- </div>
-</div>
+    <div class="container-flueid block">
+        <h1>Services</h1>
 
-<div class="container-flueid block">
-    <h1>Services</h1>
+        <div class="container">
 
-    <div class="container">
-        <div class="right">
             <div class="row">
                 <div class="col-md-4">
                     <div class="txt2">
-                        <img src="img/Group1.png" alt="" style="height: 80px; width: 80px;">
+                        <img src="Img/Group1.png" alt="" style="height: 80px; width: 80px;">
                         <h4 style="font-weight: bold;">IT Staffing</h4>
                         <p>Innovation-driven information technology staffing</p>
                         <button class="Btn-Container1">
@@ -1184,7 +1507,7 @@ top: 5px;
                 </div>
                 <div class="col-md-4">
                     <div class="txt2">
-                        <img src="img/Coding.png" alt="" style="height: 80px; width: 80px;">
+                        <img src="Img/Coding.png" alt="" style="height: 80px; width: 80px;">
                         <h4 style="font-weight: bold;">Application Development</h4>
                         <p>Web & Mobile Application Development</p>
                         <button class="Btn-Container1">
@@ -1194,7 +1517,7 @@ top: 5px;
                 </div>
                 <div class="col-md-4">
                     <div class="txt2">
-                        <img src="img/Wifi.png" alt="" style="height: 80px; width: 80px;">
+                        <img src="Img/Wifi.png" alt="" style="height: 80px; width: 80px;">
                         <h4 style="font-weight: bold;">Wireless Engineering</h4>
                         <p>4G, LTE, VoLTE, 5G Engineering</p>
                         <button class="Btn-Container1">
@@ -1202,72 +1525,214 @@ top: 5px;
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="right">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="txt2">
-                        <img src="img/Group1.png" alt="" style="height: 80px; width: 80px;">
-                        <h4 style="font-weight: bold;">Quality Assurance</h4>
-                        <p>Manual, Automation, Performance Testing</p>
-                        <button class="Btn-Container1">
-                            <span class="text1">Know more</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="txt2">
-                        <img src="img/Coding.png" alt="" style="height: 80px; width: 80px;">
-                        <h4 style="font-weight: bold;">Offshoring Services</h4>
-                        <p>Offshore Development and Resourcing</p>
-                        <button class="Btn-Container1">
-                            <span class="text1">Know more</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="txt2">
-                        <img src="img/Wifi.png" alt="" style="height: 80px; width: 80px;">
-                        <h4 style="font-weight: bold;">Product Development</h4>
-                        <p>End-to-end product development</p>
-                        <button class="Btn-Container1">
-                            <span class="text1">Know more</span>
-                        </button>
+                <div class="right">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="txt2">
+                                <img src="Img/Group1.png" alt="" style="height: 80px; width: 80px;">
+                                <h4 style="font-weight: bold;">Quality Assurance</h4>
+                                <p>Manual, Automation, Performance Testing</p>
+                                <button class="Btn-Container1">
+                                    <span class="text1">Know more</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="txt2">
+                                <img src="Img/Coding.png" alt="" style="height: 80px; width: 80px;">
+                                <h4 style="font-weight: bold;">Offshoring Services</h4>
+                                <p>Offshore Development and Resourcing</p>
+                                <button class="Btn-Container1">
+                                    <span class="text1">Know more</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="txt2">
+                                <img src="Img/Wifi.png" alt="" style="height: 80px; width: 80px;">
+                                <h4 style="font-weight: bold;">Product Development</h4>
+                                <p>End-to-end product development</p>
+                                <button class="Btn-Container1">
+                                    <span class="text1">Know more</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 <div class="container-fluied Test">
-    
-    <div>
-        <h1>Industries We Serve</h1>
+        <div>
+            <h1>Industries We Serve</h1>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-2">
+                <div class="txt2">
+                    <img src="Img/Medical.png" alt="" style="height: 80px; width: 80px;">
+                    <h4 style="font-weight: bold; color: #fff;">Healthcare</h4>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="txt2">
+                    <img src="Img/image 3.png" alt="" style="height: 80px; width: 80px;">
+                    <h4 style="font-weight: bold; color: #fff;">Telecommunications</h4>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="txt2">
+                    <img src="Img/mobile.png" alt="" style="height: 80px; width: 80px;">
+                    <h4 style="font-weight: bold; color: #fff;">Retail</h4>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="txt2">
+                    <img src="Img/bank.png" alt="" style="height: 80px; width: 80px;">
+                    <h4 style="font-weight: bold; color: #fff;">Banking</h4>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="txt2">
+                    <img src="Img/film.png" alt="" style="height: 80px; width: 80px;">
+                    <h4 style="font-weight: bold; color: #fff;">Media</h4>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 </div>
 
-<script>
-        function openNav() {
-          document.getElementById("mySidenav").style.display = "block";
-        }
-    
-        function closeNav() {
-          document.getElementById("mySidenav").style.display = "none";
-        }
-</script>
+<div class="container action">
+    <h1>Awards</h1>
+    <p>Recognized for outstanding growth.</p>
+    <h3>Trusted by clients in delivering top talent </br> and high quality delivery services.</h3>
 
-<script>
-    window.onload = function() {
-        var skillBars = document.querySelectorAll('.skill-per');
-        skillBars.forEach(function(skillBar) {
-            skillBar.style.animation = 'fillBars 2.5s forwards';
-        });
-    };
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="Img/image.png" style="height:100px; width:250px;" alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/image2.png" style="height:100px; width:250px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/deloitte.png" style="height:100px; width:250px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/ima.png" style="height:100px; width:250px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/quality.png" style="height:130px; width:100px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/qua.png" style="height:130px; width:100px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/2022.png" style="height:130px; width:100px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/inc.png" style="height:130px; width:100px;"  alt="" />
+            </div>
+            <div class="slide">
+                <img src="Img/image.png" style="height:100px; width:250px;"  alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluied Test1">
+    <div>
+      <h1>Learn how SRI Tech Solutions can enable your future IT initiatives</h1>
+    </div>
+    <button class="Btn-Container">
+        <span class="text">Know more</span>
+    </button>
+</div>
+
+<!-- <footer class="footer-section">
+    <div class="container-fluied">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="Img/logo1.png"  alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>All Rights Reserved. This website is owned and operated by SRI Tech Solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="#Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Company">Company</a>
+                            </li>
+                            <li>
+                                <a href="#IT Staffing">IT Staffing</a>
+                            </li>
+                            <li>
+                                <a href="#Services & Solutions">Services & Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#Jobseekers">Jobseekers</a>
+                            </li>
+                            <li>
+                                <a href="#Blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#Contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#Login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                </div>
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2018, All Right Reserved.</p>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>
+
+    <script>
+        window.onload = function () {
+            var skillBars = document.querySelectorAll('.skill-per');
+            skillBars.forEach(function (skillBar) {
+                skillBar.style.animation = 'fillBars 2.5s forwards';
+            });
+        };
     </script>
 
 </body>
